@@ -1,0 +1,97 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<pre>
+<div class=ct1>
+    LEADER (ldr) - Etichetta del record
+</div>
+<div class=ct2>
+    Obbligatorio - Non ripetibile
+
+    Il leader non ha indicatori n&eacute; sottocampi; le posizioni dei dati sono fisse.
+</div>
+<div class=ct3>
+     00-04 Lunghezza del record
+
+     05 Status del record
+        c = Corretto
+        d = Cancellato
+        n = Nuovo
+        o = Precedentemente fornito a livello gerarchico pi&ugrave; alto
+        p = Precedentemente fornito incompleto (CIP)
+
+     06 Tipo di record
+        a = Testi a stampa, in microforma o in formato elettronico (esclusi i manoscritti)
+        b = Testi manoscritti (anche in microforma o in formato elettronico)
+        c = Musica scritta a stampa, in microforma o in formato elettronico (esclusi i manoscritti musicali)
+        d = Manoscritti musicali (anche microforma o in formato elettronico)
+        e = Materiali cartografici a stampa, in microforma o in formato elettronico (esclusi i manoscritti)
+        f = Materiali cartografici manoscritti (anche in microforma o in formato elettronico)
+        g = Videoregistrazioni, film o proiezioni visive (anche in formato digitale)
+        i = Audioregistrazioni non musicali
+        j = Audioregistrazioni musicali
+        k = Grafica bidimensionale (disegni, dipinti, fotografie etc.)
+        l = Risorse elettroniche (ad es., software, dati numerici, sistemi e servizi online)
+        m = Multimediali
+        r = Oggetti tridimensionali
+<div class=ct4>
+       N.B.: per i documenti su supporto digitale (CD-ROM, DVD-ROM etc., documenti oline)
+       non va ordinariamente utilizzato il codice "l", ma quello degli altri codici che
+       corrisponde la contenuto del documento.
+</div>
+<div class=ct3>
+     07 Livello bibliografico
+        a = Analitico (parte componente)
+        c = Miscellanea non editoriale
+        i = Risorsa integrativa (ad es., documenti in aggiornamento a fogli mobili, basi di dati
+            e siti web in aggiornamento)
+        m = Monografia
+        s = Seriale (pubbl. in serie)
+
+     08 Livello gerarchico
+        [in bianco] Non definito
+        0 = Senza relazione gerarchica
+        1 = Livello pi&ugrave; alto
+        2 = Al di sotto del livello pi&ugrave; alto
+
+     09 Non definito
+     Contiene uno spazio
+
+    10 Lunghezza degli Indicatori (per UNIMARC 2)
+
+    11 Lunghezza dei codici dei sottocampi (per UNIMARC 2)
+
+    12-16 Indirizzo di partenza dei dati
+
+    17 Livello di codifica
+        [in bianco] = completamente codificato
+        1 = Codifica senza l'esame del documento
+        2 = CIP
+        3 = Catalogazione non completa
+
+    18 Tipo di catalogazione descrittiva
+        [in bianco] =Interamente conforme a ISBD
+        i = Parzialmente conforme a ISBD
+        n = Non conforme a ISBD
+
+    19 Non definito
+    Contiene uno spazio
+
+    20 Posizione per la lunghezza del campo (in UNIMARC &egrave; 4)
+
+    21 Posizioni per il carattere di partenza del campo (in UNIMARC &egrave; 5)
+
+    22 Lunghezza della parte dell'indice definita dall'implementazione  (in UNIMARC &egrave; 0)
+
+    23 Non definito
+    Contiene uno spazio
+
+</div>
+
+
+</pre>
+<a class = "listaCampiUnimarc" title="Lista help campi Unimarc" target="_blank" href="lista_unimarc_ita.html">Lista help campi Unimarc</a>
+</body>
+</html>
