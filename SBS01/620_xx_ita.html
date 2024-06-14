@@ -1,0 +1,55 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<pre>
+<div class=ct1>
+     620 - Accesso per luogo e data
+</div>
+<div class=ct2>
+    Ripetibile
+
+    Indicatore 1: Tipo di dati [non usato in SBN]
+        [in bianco] Pubblicazione o produzione
+                 1  Esecuzione
+                 2  Prima esecuzione
+                 3  Registrazione
+                 4  Registrazione dal vivo
+                 5  Rimasterizzazione
+                 0  Non specificato
+    Indicatore 2:  Fonte dei dati [non usato in SBN]
+        [in bianco] Sconosciuta/non applicabile
+                 0  Dati non presenti sul documento
+                 1  Dati presenti sul documento
+</div>
+<div class=ct3>
+    Sottocampi:
+    $a Nazione (NR, obbligatorio per SBN)
+    $b Stato o provincia ecc. [non usato in SBN]
+    $c Contea (NR) [non usato in SBN]
+    $d Citt&agrave;(NR, obbligatorio per SBN) 
+    $e Sede (edificio, piazza ecc.) (R) [non usato in SBN]
+    $f Data (R) [non usato in SBN]
+    $g Stagione (NR) [non usato in SBN]
+    $h Occasione (NR) [non usato in SBN]
+    $i Data finale (NR)[non usato in SBN]
+    $2 Codice authority
+    $3 Numero dell'Authority (NR, per SBN &egrave; il BID ed &egrave; obbligatorio)
+
+
+</div>
+<div class=ct4>
+ NOTA SBT:
+       - usare solo per la registrazione del luogo normalizzato in Libro antico;
+       - compilare solo il $a e il $d;
+       - il $2 deve contenere il codice SBN_AUT.
+     
+
+
+</div>
+
+</pre>
+<a class = "listaCampiUnimarc" title="Lista help campi Unimarc" target="_blank" href="lista_unimarc_ita.html">Lista help campi Unimarc</a>
+</body>
+</html>

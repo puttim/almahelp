@@ -1,0 +1,42 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<pre>
+<div class=ct1>
+     454 - Traduzione di
+</div>
+<div class=ct2>
+    Indicatore 1: non definito  [non usato in SBN]
+    Indicatore 2: Indicatore per la nota  [non usato in SBN]
+            0 Non stampare la nota
+            1 Stampa la nota
+</div>
+<div class=ct3>
+    Sottocampi:
+      $1 (uno) dati per il legame (R)
+      $a Titolo (NR)
+</div>
+<div class=ct4>
+      Compilazione per i record SBN: usare solo per le traduzioni di traduzioni: 
+                                     per traduzioni da opera originale
+                                     usare 500 e catturare in authority il record relativo
+
+      Compilazione per i record dell'istituzione:
+                   1. Se in archivio &egrave; presente un record distinto relativo all'edizione
+                      su cui &egrave; stata condotta la traduzione, come secondo indicatore si usa 0;
+                      in $1 si inserisce 001 e il numero di sistema, a nove cifre, del record
+                      relativo all'edizione originale (in questo record deve essere compilato il
+                      campo 453, reciproco del campo 454)
+                   2. Se in archivio non &egrave; presente un record distinto relativo all'edizione
+                      su cui &egrave; stata condotta la traduzione, o se non &egrave; individuabile
+                      una particolare edizione originale, come secondo indicatore si usa 1; in $1 si
+                      inserisce 2001, e in $a si riporta il titolo originale
+
+
+</div>
+</pre>
+<a class = "listaCampiUnimarc" title="Lista help campi Unimarc" target="_blank" href="lista_unimarc_ita.html">Lista help campi Unimarc</a>
+</body>
+</html>

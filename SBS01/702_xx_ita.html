@@ -1,0 +1,60 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<pre>
+<div class=ct1>
+702 - Autore persona - Responsabilit&agrave; secondaria
+</div>
+<div class=ct2>
+    Ripetibile
+    Indicatore 1: non definito
+
+    Indicatore 2: Indicatore della forma del nome
+            0 Nome in forma diretta
+            1 Nome in forma inversa
+
+</div>
+<div class=ct3>
+    Sottocampi:
+      $a Elemento principale (NR)
+      $b Secondo elemento del nome (NR)
+      $c Qualificazione (R)
+      $d Numerali romani (NR) [non usato in SBN]
+      $f Date (NR)
+      $3 Numero dell'Authority (NR, obbligatorio per SBN)
+      $4 Codice sulla relazione  (R)
+      $9
+
+</div>
+Compilazione per i record SBN:
+
+    - i numeri romani si trasformano in numeri arabi, se hanno valore di ordinali sono seguiti da punto.
+
+    - sottocampo a:
+      - con i cognomi con prefisso usare underscore(_) per legare i due termini
+        Es.: $$a De_Martini, $$b Ruggiero
+
+      - In presenza di un prefisso nella seonda parte del nome del gruppo secondario con autori in forma diretta occorre inserire il # tra il prefisso e la seconda parte
+        Es.: $$aBonvesin : de#la Riva
+		
+    - sottocampo b:
+      - quando si usa questo sottocampo, il 2. indicatore deve essere 1
+	  
+    - sottocampo c:
+      - le qualificazioni che accompagnano il nome si inseriscono senza parentesi uncinate
+	  
+    - sottocampo f:
+      - le date che accompagnano il nome si inseriscono senza parentesi uncinate 
+      - le date si usano per disambiguare forme identiche
+
+    - sottocampo 4:
+      - da compilare per i nuovi record del tipo materiale Musica
+      
+      <a class = "principali Codici di relazione" title="principali Codici di relazione" target="_blank" href="http://www.sba.unisi.it/almahelp/SBS01/principali_codici_di_relazione.html">Lista dei principali Codici di relazione</a>
+
+</pre>
+<a class = "listaCampiUnimarc" title="Lista help campi Unimarc" target="_blank" href="lista_unimarc_ita.html">Lista help campi Unimarc</a>
+</body>
+</html>

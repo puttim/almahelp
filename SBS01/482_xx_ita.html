@@ -1,0 +1,50 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<pre>
+<div class=ct1>
+     482 -  Rilegato con
+</div>
+<div class=ct2>
+    Non usato in SBN
+
+    Ripetibile
+
+    Indicatore 1: non definito
+    Indicatore 2: Indicatore per la nota
+            0 Non stampare la nota
+            1 Stampa la nota
+</div>
+<div class=ct3>
+    Sottocampi:
+      $1 (uno) dati per il legame (R)
+      $a Titolo (NR)
+      $5 codice ICCU
+</div>
+<div class=ct4>
+ NOTA UNIFI: compilati in locale in catalogazione Libro antico, con embedding (doppio $$1 e $$a)
+
+ NOTA SBS per record dell'istituzione:
+           Da utilizzare nei record relativi al secondo e ai seguenti di pi&ugrave; documenti
+           distinti e in origine fisicamente separati, quando singoli esemplari di tali
+           documenti siano stati successivamente rilegati in un�unita' fisica; in taluni casi,
+           al fine di chiarire il rapporto tra i documenti correlati, pu� essere opportuno
+           compilare anche la nota 316.
+           Da non utilizzare per collegare record relativi a documenti distinti che siano
+           pubblicati unitamente, o a riproduzioni in un unico supporto fisico di documenti
+           originariamente separati; utilizzare, in tal caso, il campo 423
+
+           Compilazione:
+           Come secondo indicatore si usa sempre 0; in $1 si inserisce 001 e e lo 
+           001 del record relativo  al primo documento rilegato (in
+           questo record deve essere compilato il campo 481, reciproco del 482); in un
+           secondo $1 si inserisce 2001 e in $5 il codice ICCU della Biblioteca che possiede
+           gli esemplari rilegati
+
+</div>
+</pre>
+<a class = "listaCampiUnimarc" title="Lista help campi Unimarc" target="_blank" href="lista_unimarc_ita.html">Lista help campi Unimarc</a>
+</body>
+</html>
