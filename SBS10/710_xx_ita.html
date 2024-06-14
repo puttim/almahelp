@@ -1,0 +1,61 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<pre>
+
+<div class=ct1>
+     Campo 710 - Autore ente da usare nel record del titolo uniforme(NR)
+</div>
+<div class=ct2>
+     Facoltativo (Obbligatorio per i titoli di opere non anonime)
+     Non ripetibile
+     Indicatore 1: tipo di ente
+</div>
+       0=Ente permanente
+       1=Ente temporaneo
+
+<div class=ct2>
+     Indicatore 2: forma del nome
+</div>
+       0=Nome in forma inversa
+       1=Nome sotto luogo geografico
+       2=Nome in forma diretta
+<div class=ct3>
+     Sottocampi:
+
+     a - Elemento principale (NR)
+     b - Suddivisione (R)
+     c - Qualificazione (R)
+     d - Numero del congresso
+         o numero della parte del congresso (NR)
+     e - Luogo del congresso (NR)
+     f - Data del congresso (NR)
+     g - Elemento del nome invertito (NR)[non usato in SBN]
+     h - Ulteriore parte del nome invertito (NR)[non usato in SBN]
+     4 - Codice di relazione (R)[non usato in SBN]
+     x - Suddivisione generale (R)[non usato in SBN]
+     y - Suddivisione geografica (R)[non usato in SBN]
+     z - Suddivisione cronologica (R)[non usato in SBN]
+
+</div>
+     Sottocampi di controllo:
+<div class=ct3>
+     3 - Numero record d'autorita' (NR)
+</div>
+   NB:
+    - i numeri romani si trasformano in numeri arabi, se hanno valore di ordinali sono seguiti da punto.
+	
+    - SBN prevede l'inserimento degli asterischi davanti alle parole significative del nome:
+      fino a $ nel $$a e fino a 2 nel $$b 
+      ES.: $$a *Italia $$b *Direzione *generale degli affari generali e del personale
+	  
+    - sottocampo 3: inserire il VID del record di authority dell'autore
+</div>
+<div class=ct3>
+<a class = "listaCampiUnimarcAuthorities" title="Lista help campi Unimarc Authorities" target="_blank" href="lista_unimarc_aut.html">Lista help campi Unimarc  Authorities</a>
+</div>
+</pre>
+</body>
+</html>

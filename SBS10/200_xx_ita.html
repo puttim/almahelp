@@ -1,0 +1,68 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<pre>
+
+<div class=ct1>
+     Campo 200 - Autore personale
+</div>
+<div class=ct2>
+   Obbligatorio nei record di autorita' per gli autori personali
+   Non ripetibile
+   
+     Indicatore 1: non definito
+     Indicatore 2: forma del nome
+
+</div>
+      0=Nome in forma diretta
+      1=Nome in forma inversa (Cognome, Nome)
+
+<div class=ct3>
+     Sottocampi:
+
+     a - Elemento principale (NR)
+     b - Ulteriore elemento del nome (NR)
+     c - Qualificazioni, escluse le date (R)
+     d - Numeri romani (NR) [non usato in SBN]
+     f - Date (NR)
+     g - Scioglimento delle iniziali del nome (NR)[non usato in SBN]
+     4 - Codice di relazione (R)[non usato in SBN]
+     x - Suddivisione generale (R)[non usato in SBN]
+     y - Suddivisione geografica (R)[non usato in SBN]
+</div>
+     Sottocampi di controllo:
+
+<div class=ct3>
+     7 - Alfabeto (NR)[non usato in SBN]
+     8 - Lingua di catalogazione (NR)[non usato in SBN]
+</div>
+<div class=ct2>
+ NB:
+    - Corrisponde ai campi 700, 701, 702 di Unimarc bibliografico
+	
+    - Si registra in questo campo la forma preferita, le forme varianti si registrano nel campo 400
+	
+    - sottocampo a:
+      - con i cognomi con prefisso usare underscore(_) per legare i due termini
+        Es.: $$a De_Martini, $$b Ruggiero
+      - In presenza di un prefisso nella seonda parte del nome del gruppo secondario con autori in forma diretta occorre inserire il # tra il prefisso e la seconda parte
+        Es.: $$aBonvesin : de#la Riva
+		
+    - sottocampo b:
+      - quando si usa questo sottocampo , il 2. indicatore deve essere 1
+	  
+    - sottocampo c:
+      - le qualificazioni che accompagnano il nome si inseriscono senza parentesi uncinate
+	  
+    - sottocampo f:
+      - le date che accompagnano il nome si inseriscono senza parentesi uncinate 
+      - le date si usano per disambiguare forme identiche
+</div>
+<div class=ct3>
+<a class = "listaCampiUnimarcAuthorities" title="Lista help campi Unimarc Authorities" target="_blank" href="lista_unimarc_aut.html">Lista help campi Unimarc  Authorities</a>
+</div>
+</pre>
+</body>
+</html>

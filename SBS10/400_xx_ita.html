@@ -1,0 +1,69 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<pre>
+<div class=ct1>
+     Campo 400 - Punto di accesso variante - Autore persona (R)
+</div>
+<div class=ct2>
+     Facoltativo
+     Ripetibile
+
+     Indicatore 1: non definito
+     Indicatore 2: forma del nome
+
+</div>
+      0=Nome in forma diretta
+      1=Nome in forma inversa (Cognome, Nome)
+
+<div class=ct3>
+     Sottocampi:
+
+     a - Elemento principale (NR)
+     b - Ulteriore elemento del nome (NR)
+     c - Qualificazioni, escluse le date (R)
+     d - Numeri romani (NR) [non usato in SBN]
+     f - Date (NR)
+     g - Scioglimento delle iniziali del nome (NR)[non usato in SBN]
+     4 - Codice di relazione (R)[non usato in SBN]
+     x - Suddivisione generale (R)[non usato in SBN]
+     y - Suddivisione geografica (R)[non usato in SBN]
+</div>
+     Sottocampi di controllo:
+<div class=ct3>
+     0 - Frase esplicativa (NR) [non usato in SBN]
+     3 - Numero record d'autorita' (NR) [non usato in SBN]
+     5 - Tracing control (NR) [non usato in SBN]
+     6 - Dato di legame fra campi (NR) [non usato in SBN]
+     7 - Alfabeto (NR) [non usato in SBN]
+     8 - Lingua della catalogazione (NR) [non usato in SBN]
+</div>
+<div class=ct2>
+ NB:
+	
+    - Si ripete nel caso in si debbano inserire più forme varianti
+	
+    - sottocampo a:
+      - con i cognomi con prefisso usare underscore(_) per legare i due termini
+        Es.: $$a De_Martini, $$b Ruggiero
+      - In presenza di un prefisso nella seonda parte del nome del gruppo secondario con autori in forma diretta occorre inserire il # tra il prefisso e la seconda parte
+        Es.: $$aBonvesin : de#la Riva
+		
+    - sottocampo b:
+      - quando si usa questo sottocampo , il 2. indicatore deve essere 1
+	  
+    - sottocampo c:
+      - le qualificazioni che accompagnano il nome si inseriscono senza parentesi uncinate
+	  
+    - sottocampo f:
+      - le date che accompagnano il nome si inseriscono senza parentesi uncinate 
+      - le date si usano per disambiguare forme identiche
+</div>
+<div class=ct3>
+<a class = "listaCampiUnimarcAuthorities" title="Lista help campi Unimarc Authorities" target="_blank" href="lista_unimarc_aut.html">Lista help campi Unimarc  Authorities</a>
+</div>
+</pre>
+</body>
+</html>

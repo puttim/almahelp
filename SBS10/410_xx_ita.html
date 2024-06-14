@@ -1,0 +1,67 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<pre>
+<div class=ct1>
+     Campo 410 - Punto di accesso variante - Autore Ente (R)
+</div>
+<div class=ct2>
+     Facoltativo
+     Non ripetibile
+     Indicatore 1: tipo di ente
+</div>
+       0=Ente permanente
+       1=Ente temporaneo
+
+<div class=ct2>
+     Indicatore 2: forma del nome
+</div>
+       0=Nome in forma inversa
+       1=Nome sotto luogo geografico
+       2=Nome in forma diretta
+<div class=ct3>
+     Sottocampi:
+
+     a - Elemento principale (NR)
+     b - Suddivisione (R)
+     c - Qualificazione (R)
+     d - Numero del congresso
+         o numero della parte del congresso (NR)
+     e - Luogo del congresso (NR)
+     f - Data del congresso (NR)
+     g - Elemento del nome invertito (NR)[non usato in SBN]
+     h - Ulteriore parte del nome invertito (NR)[non usato in SBN]
+     4 - Codice di relazione (R)[non usato in SBN]
+     x - Suddivisione generale (R)[non usato in SBN]
+     y - Suddivisione geografica (R)[non usato in SBN]
+     z - Suddivisione cronologica (R)[non usato in SBN]
+</div>
+     Sottocampi di controllo:
+<div class=ct3>
+     0 - Frase d'istruzione (NR) [non usato in SBN]
+     3 - Numero record d'autorita' (NR) [non usato in SBN]
+     5 - Tracing control (NR) [non usato in SBN]
+     6 - Dato di legame fra campi (NR) [non usato in SBN]
+     7 - Alfabeto (NR) [non usato in SBN]
+     8 - Lingua della catalogazione (NR) [non usato in SBN]
+</div>
+<div class=ct2>
+ NB:
+    - Si ripete nel caso in si debbano inserire più forme varianti
+
+    - SBN prevede l'inserimento degli asterischi davanti alle parole significative del nome:
+      fino a $ nel $$a e fino a 2 nel $$b 
+      ES.: $$aItalia $$b Direzione *generale degli affari generali e del personale
+  
+    - sottocampo d:
+      - si indica sempre con il numero arabo seguito da un punto
+      ES.: $$d 3. $$e Roma $$f 1980
+</div>
+<div class=ct3>
+<a class = "listaCampiUnimarcAuthorities" title="Lista help campi Unimarc Authorities" target="_blank" href="lista_unimarc_aut.html">Lista help campi Unimarc  Authorities</a>
+</div>
+</pre>
+</body>
+</html>
