@@ -1,0 +1,39 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<pre>
+
+<div class=ct1>
+     012 - Impronta per il libro antico
+</div>
+<div class=ct2>
+    Per SBN: compilabile solo per Tipo materiale = E (libro antico), C (Cartografia), G (Grafica), U (Musica)
+    Ripetibile
+    Indicatori non definiti
+</div>
+<div class=ct3>
+    Sottocampi:
+      $a Impronta (NR)
+      $2 Sistema di codifica dell'impronta (NR)
+      $5 Istituzione a cui il campo fa riferimento (Obbligatorio per i record dell'Istitution, NR)[non usato in SBN, usare $9]
+      $9 Istituzione a cui il campo fa riferimento (per i record SBN)
+</div>
+<div class=ct4>
+      N.B.:
+      - Ogni istituzione che rileva l'impronta deve sempre compilare il campo 012.
+      - Le istituzioni che non rilevano l'impronta non compileranno il campo 012.
+      - Per tutte le varianti si ripete il campo 012, completo di $5 con sigla
+        istituzione seguita dalla collocazione preceduta da ':'
+      - Per le opere in pi&ugrave; volumi catalogate in un unico record ripetere il campo 012
+        tante volte quanti sono i volumi, aggiungendo l'indicazione del volume nel $5
+        dopo la collocazione preceduto da 'v.'
+
+      - Per compilare il $5 posizionarsi sul sottocampo, inserendo uno spazio si apre una lista
+      da cui selezionare il codice appropriato
+</div>
+</pre>
+<a class = "listaCampiUnimarc" title="Lista help campi Unimarc" target="_blank" href="lista_unimarc_ita.html">Lista help campi Unimarc</a>
+</body>
+</html>

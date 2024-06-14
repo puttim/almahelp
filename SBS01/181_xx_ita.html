@@ -1,0 +1,76 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<pre>
+
+<div class=ct1>
+    181 - Dati codificati: forma del contenuto
+</div>
+<div class=ct2>
+    Ripetibile
+
+    Indicatore 1: non definito
+
+    Indicatore 2: codice della forma ISBD [non usato]
+					0 non usato per visualizzare il codice
+					1 usato per visualizzare il codice
+					# informazione non data, da uase quando si compila il sottocampo c
+</div>
+<div class=ct3>
+    Sottocampi:
+         $a Forma del contenuto(NR)
+	 
+	     0/1
+         a = dataset
+         b = immagine
+         c = movimento (no film)
+         d = musica
+         e = oggetto
+         f = programma
+         g = suoni (no musica no parlato)
+         h = parlato
+         i = testo
+         m = forme del contenuto multiple
+         z = altra forma del contenuto
+
+    NOTA: in SBN usata solo la posizione 0
+			 
+         $b Qualificazione del contenuto (R)
+ 
+         0 Specificazione del tipo di contenuto (obbligatorio se applicabile)
+         a = notato
+         b = eseguito
+         c = cartografico
+         x = non applicabile
+         # = non usato
+ 
+         1 Specificazione del tipo di movimento (obbligatorio se applicabile)
+         a = in movimento
+         b = fissa
+ 
+         2 Specificazione della dimensionalità (obbligatorio se applicabile)
+         2 = bidimensionale
+         3 = tridimensionale
+ 
+        3-5 Specificazione sensoriale (obbligatorio)
+         a = uditivo
+         b = gustativo
+         c = olfattivo
+         d = tattile
+         e = visivo
+ 
+         $c Altre codifiche per la forma del contenuto [non usato in SBN](R)
+         
+         $2 Sistema di codificati (obbligatorio se si usa il $c) [non usato in SBN](NR)
+ 
+         $6 Dati di legame [non usato in SBN] (R)
+ 
+    NOTA: campo obbligatorio per SBN per i record con natura M, S e W
+
+</div>
+</pre>
+<a class = "listaCampiUnimarc" title="Lista help campi Unimarc" target="_blank" href="lista_unimarc_ita.html">Lista help campi Unimarc</a>
+</body>
+</html>

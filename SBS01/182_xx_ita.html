@@ -1,0 +1,50 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<pre>
+
+<div class=ct1>
+    182 - Dati codificati: tipo di mediazione
+</div>
+<div class=ct2>
+    Ripetibile
+
+    Indicatore 1: non definito
+
+    Indicatore 2: codice della forma ISBD [non usato]
+					0 non usato per visualizzare il codice
+					1 usato per visualizzare il codice
+					# informazione non data, da uase quando si compila il sottocampo c
+</div>
+<div class=ct3>
+    Sottocampi:
+         $a Codice tipo di mediazione(NR)
+		
+	0
+	a = audio
+	b = elettronico
+	c = microforma
+	d = microscopio
+	e = proiettato
+	f = stereografico
+	g = video
+	m = mediazione multipla
+	n = senza mediazione
+	z = altra mediazione
+
+
+			 
+    $c Altri codifiche per tipo mediazione [non usato in SBN] (R)
+	
+	$2 Sistema di codificati (obbligatorio se si usa il $c) [non usato in SBN](NR)
+	
+	$6 Dati di legame (R) [non usato in SBN]
+		 	 
+	NOTA: campo obbligatorio per SBN per i record con natura M, S e W
+</div>
+</pre>
+<a class = "listaCampiUnimarc" title="Lista help campi Unimarc" target="_blank" href="lista_unimarc_ita.html">Lista help campi Unimarc</a>
+</body>
+</html>

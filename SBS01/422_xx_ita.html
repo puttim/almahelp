@@ -1,0 +1,50 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<pre>
+<div class=ct1>
+     422 - Legame all'unit&agrave; "padre" del supplemento
+</div>
+<div class=ct2>
+    Ripetibile
+
+    Indicatore 1: non definito [non usato in SBN]
+    Indicatore 2: Indicatore per la nota [non usato in SBN]
+            0 Non stampare la nota
+            1 Stampa la nota
+</div>
+<div class=ct3>
+    Sottocampi:
+      $1 (uno) dati per il legame (R)
+      $a Titolo (NR)
+</div>
+<div class=ct4>
+      N.B.: Pu&ograve; essere utilizzato sia nel record relativo ad un seriale, sia
+            nel record relativo ad una monografia
+
+     NOTA UNIFI: utilizzato solo se la risorsa di arrivo e' presente in catalogo
+                 Indicatore 2: sempre 0 
+
+     Compilazione per i record SBN:
+                      $1 embedding del BID del record collegato (che deve essere presente in SBN)
+                      
+     Compilazione per i record nell'istituzione:
+                   1. Se &egrave; presente un record distinto relativo al
+                      padre del supplemento, come secondo indicatore si usa 0; in $1
+                      si inserisce 001 e il numero di sistema, a nove cifre, del record
+                      relativo al padre del supplemento (in questo record deve essere
+                      compilato un campo 421, reciproco del campo 422)
+
+                   2. Se non &egrave; presente un record distinto relativo
+                      al padre del supplemento, come secondo indicatore si usa 1; in $1
+                      si inserisce 2001, e in $a si riporta il titolo del padre del supplemento
+
+
+
+</div>
+</pre>
+<a class = "listaCampiUnimarc" title="Lista help campi Unimarc" target="_blank" href="lista_unimarc_ita.html">Lista help campi Unimarc</a>
+</body>
+</html>

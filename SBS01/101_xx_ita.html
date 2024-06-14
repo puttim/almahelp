@@ -1,0 +1,58 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<pre>
+
+<div class=ct1>
+    101 - Lingua della pubblicazione
+</div>
+<div class=ct2>
+    Obbligatorio
+    Non ripetibile
+
+   
+    Indicatore 1: Indicatore di traduzione
+            0 Lingua originale [non usato in SBN]
+            1 Traduzione dall'originale o in lavoro intermedio [non usato in SBN]
+            2 Contiene traduzione + altro testo in altra lingua [non usato in SBN]
+
+    Indicatore 2: non definito
+
+</div>
+<div class=ct3>
+    Sottocampi:
+      $a - Lingua del testo (R)
+      $b - Lingua del testo intermedio, quando non &egrave; stato tradotto dall'originale (R) [non usato in SBN]
+      $c - Lingua del testo originale (R) [non usato in SBN]
+      $d - Lingua del compendio (R) [non usato in SBN]
+      $e - Lingua degli indici (R) [non usato in SBN]
+      $f - Lingua del frontespizio se diversa da quella del testo (R) [non usato in SBN]
+      $g - Lingua del titolo proprio (R) [non usato in SBN]
+      $h - Lingua del libretto, ecc. (R) [non usato in SBN]
+      $i - Lingua del materiale allegato (R) [non usato in SBN]
+      $j - Lingua dei sottotitolo (R) [non usato in SBN]
+
+</div>
+<div class=ct4>
+      Compilazione per i record SBN:
+        Indicatore 1: non &egrave; usato in SBN, ma &egrave; utilizzabile in creazione. Da compilare in caso di cattura da SBN.
+        Sottocampo a: per SBN si possono inserire fino a 3 codici di lingua
+
+        mul: usare se in una risorsa sono usate più di 3 lingue. Il codice 'mul' deve essere sempre precedutop dall'indicazione della lingua predominante, o dalla prima se non c'è predominanza
+        mis: usare se la risorsa presenta un testo in una lingua identificata, ma cge non può essre indicata con un specifico codice.
+        und: lingua non identificata
+        abs: codice di lingua assente (da usare per le risorse prive di testo)
+</div>
+
+<div class=ct3>
+<a class = "Lista Codice Lingua - Campo 101" title="Lista Codice Lingua - Campo 101" target="_blank" href="http://norme.iccu.sbn.it/index.php?title=Tabelle_dei_codici/Codice_LING">Lista Codice Lingua - Campo 101</a>
+<br>
+
+<a class = "listaCampiUnimarc" title="Lista help campi Unimarc" target="_blank" href="lista_unimarc_ita.html">Lista help campi Unimarc</a>
+</div>
+</pre>
+</body>
+</html>
+

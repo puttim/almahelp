@@ -1,0 +1,52 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<pre>
+<div class=ct1>
+    145 - Dati codificati: mezzo dell'esecuzione musicale [NON USATO in SBS]
+</div>
+<div class=ct2>
+    Non usato in SBN
+    Ripetibile
+
+    Indicatore 1: Arrangiamento
+            0 Composizione originale
+            1 Composizione arrangiata
+
+    Indicatore 2: Mezzo di esecuzione alternativo
+            [in bianco] Non applicabile
+            1 Mezzo di esecuzione alternativo
+</div>
+<div class=ct3>
+    Sottocampi:
+         $a Tipo di esecuzione (NR)
+             a = vocale a cappella
+             b = strumentale
+             c = vocale-strumentale
+             d = elettroacustica
+             e = elettroacustica-mista
+             u = non definita, variabile
+
+         $b Strumento/voce, conduttore, altri esecutori o apparecchi (R)
+         $c Insieme vocale/strumentale (R)
+         $d Sottoinsieme vocale/Strumentale (R)
+             In ognuno dei sottocampi $b-$d sono previste otto posizioni; in posizione
+             0-1 va indicato il numero delle part (eventualmente con uno zero iniziale),
+             in posizione 2-7 il mezzo di esecuzione, utilizzando i codici elaborati
+             dalla IALM e riportati nel Manuale Unimarc (liste A-C)
+
+         $e Numero totale di part (R)
+         $f Numero di esecutori per ciascuna parte (R)
+             In ognuno dei sottocampi $e-$f sono previste quattro posizioni; in posizione
+             0-2 va indicato il numero delle parti o dei singoli esecutori (eventualmente
+             con uno zero o doppio zero iniziale), in posizione 3 il relativo insieme di
+             esecutori, utilizzando i codici elaborati dalla IALM e riportati nel Manuale
+             Unimarc (lista D)
+
+</div>
+</pre>
+<a class = "listaCampiUnimarc" title="Lista help campi Unimarc" target="_blank" href="lista_unimarc_ita.html">Lista help campi Unimarc</a>
+</body>
+</html>

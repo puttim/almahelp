@@ -1,0 +1,60 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<pre>
+<div class=ct1>
+     321 - Note relative a indici, abstract e/o registrazioni bibliografiche esterne
+</div>
+<div class=ct2>
+    Ripetibile
+    Indicatore 1: Tipo [non usato in SBN]
+            [in bianco] - Informazione non data
+            0 Indici o abstract
+            1 Registrazione bibliografica
+
+    Indicatore 2: non definito
+
+</div>
+<div class=ct3>
+    Sottocampi:
+      $a Nome della fonte esterna contenente l'indice, l'abstract o la registrazione bibliografica (NR)
+      $b Date di copertura dell'indice o dell'abstract (NR) [non usato in SBN]
+      $c Localizzazione all'interno della fonte esterna (NR)
+	  $u Uniform resource identifier - URI (NR)
+	  $x ISBN, ISSN o altro international standard number della fonte esterna (NR) [non usato in SBN]
+</div>
+<div class=ct4>
+     N.B.: Da utilizzare per segnalare la presenza in fonti esterne (basi di dati o
+           altri documenti) di indici, abstract, citazioni e/o descrizioni bibliografiche
+           del documento catalogato
+
+    Compilazione:
+	       Il contenuto della nota pu&ograve; essere espresso a testo libero nel solo sottocampo $a,
+	       oppure ripartito, in forma pi&ugrave; normalizzata, tra i sottocampi Sa-$c
+
+	       Nel $c si inserisce il numero progressivo o il numero di pagina che nella fonte esterna
+	       corrisponde all'indice, all'abstract o alla registrazione bibliografica pertinente
+
+	       In SBS non &egrave; di norma utilizzato il sottocampo $u
+    
+    Compilazione per i record SBN:
+	       Il $a contiene un solo carattere che indica la base dati linkabile.
+	       I codici delle basi dati implementati in SBN per il $a sono i seguenti:
+	       a = British Museum
+	       b = Edit16
+	       c = ESTC
+	       d = ISTC
+	       e = VD16
+	       f = VD17
+	       g = CORAGO
+
+	      Il $u contiene la URI;
+	      Il $c contiene l'id record nella base dati esterna.
+             
+</div>
+</pre>
+<a class = "listaCampiUnimarc" title="Lista help campi Unimarc" target="_blank" href="lista_unimarc_ita.html">Lista help campi Unimarc</a>
+</body>
+</html>

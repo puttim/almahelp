@@ -1,0 +1,51 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<pre>
+<div class=ct1>
+    206 - Area specifica del materiale: Materiale cartografico - Dati matematici
+</div>
+<div class=ct2>
+    Per SBN: compilabile solo per Tipo materiale = C (Cartografia)
+    Obbligatorio
+    Non ripetibile per SBN
+    Indicatore 1: Indicatore del formato
+            [in bianco] Non strutturato
+                      0 Strutturato
+    Indicatore 2: non definito
+
+</div>
+<div class=ct3>
+    Sottocampi:
+      $a Dati matematici, formato non strutturato (NR)
+      $b Scala (R)[non usato in SBN, riportare la scala in $a]
+      $c Proiezione (NR) [non usato in SBN]
+      $d Coordinate (NR) [non usato in SBN]
+      $e Zona, per le carte celesti (NR) [non usato in SBN]
+      $f Equinozio (NR) [non usato in SBN]
+</div>
+<div class=ct4>
+   Compilazione per SBN: campo facoltativo
+   
+   Compilazione:
+   1. Formato non strutturato (indicatore 1: in bianco). Tutti i dati matematici sono
+      riportati nel sottocampo $a; la frazione che rappresenta la scala &egrave; introdotta
+      dal termine "Scala", o dal termine equivalente nella lingua del documento
+      (ad es., Scala 1:25.000); se il dato non &egrave; disponibile, si inserisce l'indicazione
+      "Scala non determinata", o il suo equivalente nella lingua del documento; gli altri
+      dati matematici (proiezione, coordinate, zona e equinozio) sono preceduti o racchiusi
+      dalla relativa punteggiatura ISBD
+
+   2. Formato strutturato (indicatore 1: 0). Ogni dato matematico &egrave; riportato nell'appropriato
+      sottocampo $b-$f, senza essere preceduto o racchiuso dalla punteggiatura ISBD; anche nel
+      sottocampo $b la frazione che rappresenta la scala &egrave; introdotta dal termine "Scala", o dal
+      termine equivalente nella lingua del documento
+
+</div>
+</div>
+</pre>
+<a class = "listaCampiUnimarc" title="Lista help campi Unimarc" target="_blank" href="lista_unimarc_ita.html">Lista help campi Unimarc</a>
+</body>
+</html>

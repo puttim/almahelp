@@ -1,0 +1,124 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<pre>
+
+<div class=ct1>
+    125 - Dati codificati: Audioregistrazioni e musica
+</div>
+<div class=ct2>
+    Per SBN: compilabile solo per Tipo materiale = U (Musica)
+    Non ripetibile
+    Indicatori non definiti
+
+</div>
+<div class=ct3>
+    Sottocampi:
+      $a Formato della musica a stampa (NR)
+      Posizione 0 - Tipo di partitura
+</div>
+<div class=ct2>
+            Codice di un carattere, indica il tipo di partitura. [codici non usati in SBN]
+              a = partitura completa, parte con guida
+              b = partiturina, partitura tascabile, partitura da studio
+              c = spartito, con accompagnamento ridotto per strumento a tastiera
+              d = partitura vocale, partitura per coro, senza accompagnamento
+              e = partitura condensata, parte di pianoforte [violino ecc.] conduttore
+              f = partitura grafica
+              g = partitura ristretta (es. innarii)
+              h = intavolatura
+              i = libro corale
+              j = particella
+              k = parte solista (cartina)
+              m = pi&ugrave; formati (indicare i singoli formati nel sottocampo $c)
+              n = spartitino
+              o = testo e accordi
+              p = partitura da tavolo
+              u = sconosciuto
+              x = non applicabile, non &egrave; una partitura
+              z = altro
+</div>
+<div class=ct3>
+      	Posizione 1 - Indicatore delle parti [non usata in SBN]
+</div>
+<div class=ct2>
+              Codice di un carattere, indica l'esistenza di parti per una partitura.
+              a = le parti esistono
+              b = parti strumentali
+              c = parti vocali
+              u = sconosciuto
+              x = non applicabile
+              y = parti non presenti
+</div>
+<div class=ct3>
+      $b Audioregistazioni non musicali, tipo di testo letterario (NR) [non usato in SBN]
+
+</div>
+<div class=ct2>
+         Possono essere usati fino a due caratteri (giustificati a sinistra);
+         le posizioni non usate rimangono vuote; se sono appropriati pi&ugrave; di
+         due codici, si d&agrave; la precedenza ai primi due nell'ordine della seguente
+         lista
+              a = poesia
+              b = letteratura drammatica
+              c = narrativa (romanzi, racconti, etc.)
+              d = storia
+              e = lezioni, discorsi
+              f = instruzioni (How to ...)
+              g = suoni
+              h = autobiografia
+              i = biografia
+              j = saggi
+              k = resoconti
+              l = memorie
+              m = prove
+              n = interviste
+              o = testi pubblicitari
+              p = istruzione (lingua)
+              q = conferenze
+              r = commedia
+              s = racconti popolari
+              t = testi sacri
+              z = altri tipi di letteratura
+
+
+</div>
+<div class=ct3>
+      $c Pi&ugrave; formati di musica (NR) [non usato in SBN]
+
+      Da utilizzare per indicare i singoli formati di musica presenti nel
+      docuemnto, quando il 125 $a/0 = m (pi&ugrave; formati). Nel sottocampo
+      possono essere inseriti tanti codici quanti sono necessari
+</div>
+<div class=ct2>
+             a = partitura completa, parte con guida
+             b = partiturina, partitura tascabile, partitura da studio
+             c = spartito, con accompagnamento ridotto per strumento a tastiera
+             d = partitura vocale, partitura per coro, senza accompagnamento
+             e = partitura condensata, parte di pianoforte [violino ecc.]
+		         conduttore
+             f = partitura grafica
+             g = partitura ristretta (es. innarii)
+             h = intavolatura
+             i = libro corale
+             j = particella
+             k = pseudopartitura
+             l = parte solista (cartina)
+             m = pi&ugrave; formati (indicare i singoli formati nel sottocampo $c)
+             n = spartitino
+             o = testo e accordi
+             p = partitura da tavolo
+             u = sconosciuto
+             x = non applicabile, non &egrave; una partitura
+             z = altro
+             [in bianco] = non utilizzato
+</div>
+<div class=ct4>
+NOTA SBN: 
+         - $$a obbligatorio; per la compilazione attenersi ai codici della tabella <a class = "PRESENTAZIONE" title="PRESENTAZIONE" target="_blank" href="http://www.sba.unisi.it/almahelp/SBS01/PRESENTAZIONE.pdf">PRESENTAZIONE</a>; 
+</pre>
+<a class = "listaCampiUnimarc" title="Lista help campi Unimarc" target="_blank" href="lista_unimarc_ita.html">Lista help campi Unimarc</a>
+</body>
+</html>
