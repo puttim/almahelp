@@ -14,19 +14,27 @@
 <div class=ct3>
     Sottocampi:
       $a Numero (NR)
-      $c Vedetta
+      $c Vedetta (NR) [da usare solo nei record SBN della Network Zone]
       $v Edizione (NR)
       $z Lingua dell'edizione (NR) [non usato in SBN]
+      $2 codice vocabolario (NR, obbligatorio per i record SBN della Network Zone)
       $3 Numero del record di classificazione [non usato in SBN]
 
 </div>
 <div class=ct4>
-   NOTA SBT:
-           - il polo SBT non invia notazioni Dewey in SBN;
-           - la registrazione della classificazione avviene 
-             nel campo 606 in colloquio con il vocabolario di authority DDC
+   NOTA polo SBT:
+           Sintassi: $$a (notazione) $$c (vedetta) $$v (edizione) $$2 DDC [Codice vocabolario OBBLIGATORIO]
+    
+           Il polo SBT non invia notazioni Dewey in SBN;
+    
+ 
+</div><div class=ct4>
+   NOTA per i record non catalogati nella Network Zone (no SBN):
+           - nei record catalogati in institution e non condivisi con la Network Zone 
+            i sottocampi da usare sono: a, v, z.
+ 
 </div>
 </pre>
-<a class = "listaCampiUnimarc" title="Lista help campi Unimarc" target="_blank" href="lista_unimarc_ita.html">Lista help campi Unimarc</a>
+<a class = "listaCampiUnimarc" title="Lista help campi Unimarc" target="_blank" href="http://www.sba.unisi.it/almahelp/SBS01/lista_unimarc_ita.html">Lista help campi Unimarc</a>
 </body>
 </html>
